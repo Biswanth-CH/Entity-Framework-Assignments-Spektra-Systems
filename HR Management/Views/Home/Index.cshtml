@@ -1,0 +1,38 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="container">
+    <div class="d-flex justify-content-center align-items-center min-vh-80">
+        <div class="text-center p-5 bg-white rounded-3 shadow-sm" style="max-width: 800px;">
+            <i class="bi bi-people-fill text-primary mb-4" style="font-size: 3rem;"></i>
+            <h1 class="display-5 fw-semibold mb-3">Employee Directory</h1>
+            <p class="lead text-muted mb-4">
+                Click "Employees" in the navigation bar to view and manage employee details.
+            </p>
+            <a asp-area="" asp-controller="Ets" asp-action="Index"
+               class="btn btn-primary px-4 py-2 rounded-pill fw-medium">
+                <i class="bi bi-chevron-up me-2"></i>View Employees
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    .min-vh-80 {
+        min-height: 80vh;
+    }
+
+    .rounded-3 {
+        border-radius: 1rem !important;
+    }
+
+    .btn-primary {
+        transition: all 0.3s ease;
+    }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+</style>
